@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/YumaHozumi/printf-for-typescript/issues"
   },
-  "homepage": "https://github.com/YumaHozumi/printf-for-typescript#readme"
+  "homepage": "https://github.com/YumaHozumi/printf-for-typescript#readme",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  }
 }
