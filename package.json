@@ -4,7 +4,8 @@
   "description": "Formatクラスは、文字列フォーマットのためのユーティリティクラスで、指定されたフォーマット文字列に従って引数をフォーマットします。フォーマット文字列には、整数、浮動小数点数、文字列、16進数など、さまざまなフォーマット指定子を使用できます。このクラスはTypeScriptで実装され、JavaScriptにコンパイルする必要があります。",
   "main": "format.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -15,13 +16,14 @@
     "formatting",
     "printf"
   ],
+  
   "author": "YumaHozumi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/YumaHozumi/printf-for-typescript/issues"
   },
   "homepage": "https://github.com/YumaHozumi/printf-for-typescript#readme",
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^4.9.4"
   }
 }
