@@ -96,7 +96,8 @@ export class Format {
             formatted = '';
         }
 
-       return formatted.padStart(parseInt(width), ' ');
+        return flags.includes('0') ? formatted.padStart(parseInt(width), '0') : formatted.padStart(parseInt(width), ' ');
+
     });
   }
 
