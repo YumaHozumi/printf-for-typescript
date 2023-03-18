@@ -1,6 +1,6 @@
 type FormatArg = string | number | BigInt;
 
-class Format {
+export class Format {
     static printf(format: string, ...args: FormatArg[]): string {
         let index = 0;
         return format.replace(/%([-+ 0#]*)(\d*|\*)?(\.(\d*|\*))?([hlLjzt])?([diuoxXfFeEgGaAcspn%])/g, (match, flags, width, _, precision, length, type) => {
@@ -105,4 +105,3 @@ class Format {
   }
 }
 
-console.log(Format.printf("整数: %d, 浮動小数点数: %.3f, 文字列: %s, 16進数: %x", 42, 3, "Hello, world!", 10));
